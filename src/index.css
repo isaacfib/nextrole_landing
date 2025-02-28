@@ -1,0 +1,47 @@
+/* nextrole_landing/src/index.css */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap");
+
+@font-face {
+  font-family: "AktivGrotesk-Regular";
+  src: url("/assets/fonts/AktivGrotesk-Regular.woff2") format("woff2"),
+       url("/assets/fonts/AktivGrotesk-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "AktivGrotesk-Medium";
+  src: url("/assets/fonts/AktivGrotesk-Medium.woff2") format("woff2"),
+       url("/assets/fonts/AktivGrotesk-Medium.woff") format("woff");
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --primary-color: #4938E9;
+  --primary-dark: #1600E3;
+  --text-dark: #030513;
+  --text-light: #8A859E;
+  --background-light: #FFFFFF;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "AktivGrotesk-Regular", "Inter", sans-serif;
+  color: var(--text-dark);
+  background-color: var(--background-light);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  cursor: pointer;
+  font-family: inherit;
+}
