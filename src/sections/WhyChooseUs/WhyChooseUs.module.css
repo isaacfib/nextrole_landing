@@ -1,0 +1,228 @@
+/* nextrole_landing/src/sections/WhyChooseUs/WhyChooseUs.module.css */
+.whyChooseUsSection {
+  position: relative;
+  width: 100%;
+  padding: 100px 0 120px;
+  overflow: hidden;
+}
+
+.title {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 80px;
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #030513;
+}
+
+.benefitPoint {
+  position: relative;
+  display: flex;
+  align-items: flex-start;
+  width: 235px;
+  margin-bottom: 60px;
+}
+
+.benefitPoint1 { margin-left: calc(10% - 20px); }
+.benefitPoint2 { margin-left: calc(30% - 20px); }
+.benefitPoint3 { margin-left: calc(50% - 20px); }
+.benefitPoint4 { margin-left: calc(70% - 20px); }
+
+.benefitIcon {
+  width: 24px;
+  height: 24px;
+  margin-right: 16px;
+  margin-top: 4px;
+  object-fit: contain;
+}
+
+.benefitTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  flex: 1;
+}
+
+.benefitTitle {
+  font-family: "AktivGrotesk-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #26252A;
+  margin: 0;
+}
+
+.benefitDescription {
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 28px;
+  letter-spacing: -0.03em;
+  color: #8A859E;
+  margin: 0;
+}
+
+.verticalLine {
+  position: absolute;
+  width: 162px;
+  height: 0;
+  border: 1px solid #D9E1FF;
+  transform: rotate(90deg);
+  z-index: -1;
+}
+
+.verticalLine1 { left: calc(20% - 20px); top: 140px; }
+.verticalLine2 { left: calc(40% - 20px); top: 140px; }
+.verticalLine3 { left: calc(60% - 20px); top: 140px; }
+.verticalLine4 { left: calc(80% - 20px); top: 140px; }
+
+.ctaButton {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 15px;
+  width: 100%;
+  max-width: 438px;
+  height: 60px;
+  margin: 60px auto 0;
+  background: #4938E9;
+  border: 1px solid #1600E3;
+  border-radius: 4px;
+  font-family: "AktivGrotesk-Medium", sans-serif;
+  font-weight: 500;
+  font-size: 21px;
+  line-height: 25px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background-color: #3a2dd0;
+}
+
+.decorativeImage {
+  position: absolute;
+  width: 553px;
+  height: 553px;
+  right: -200px;
+  top: 0;
+  z-index: -2;
+  overflow: hidden;
+}
+
+.decorativeImage img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transform: rotate(20.33deg);
+}
+
+@media (max-width: 1200px) {
+  .decorativeImage {
+    width: 400px;
+    height: 400px;
+    right: -100px;
+    top: 50px;
+  }
+  .benefitPoint1 { margin-left: 5%; }
+  .benefitPoint2 { margin-left: 28%; }
+  .benefitPoint3 { margin-left: 51%; }
+  .benefitPoint4 { margin-left: 74%; }
+  .verticalLine1 { left: 16%; }
+  .verticalLine2 { left: 40%; }
+  .verticalLine3 { left: 63%; }
+  .verticalLine4 { left: 87%; }
+}
+
+@media (max-width: 992px) {
+  .title {
+    font-size: 42px;
+    line-height: 50px;
+  }
+  .benefitTitle {
+    font-size: 21px;
+    line-height: 25px;
+  }
+  .benefitDescription {
+    font-size: 18px;
+    line-height: 24px;
+  }
+  .benefitPoint {
+    width: 200px;
+  }
+  .ctaButton {
+    max-width: 380px;
+    font-size: 18px;
+  }
+  .decorativeImage {
+    width: 350px;
+    height: 350px;
+    opacity: 0.6;
+  }
+}
+
+@media (max-width: 768px) {
+  .whyChooseUsSection {
+    padding: 70px 0;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+    margin-bottom: 50px;
+  }
+  .benefitPoint {
+    width: 90%;
+    max-width: 400px;
+    margin: 0 auto 40px !important;
+  }
+  .verticalLine {
+    display: none;
+  }
+  .decorativeImage {
+    width: 300px;
+    height: 300px;
+    right: -100px;
+    top: 0;
+    opacity: 0.4;
+  }
+}
+
+@media (max-width: 480px) {
+  .whyChooseUsSection {
+    padding: 50px 0;
+  }
+  .title {
+    font-size: 32px;
+    line-height: 38px;
+    margin-bottom: 40px;
+  }
+  .benefitTitle {
+    font-size: 18px;
+    line-height: 22px;
+  }
+  .benefitDescription {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .ctaButton {
+    max-width: 90%;
+    font-size: 16px;
+    padding: 12px;
+    height: 50px;
+  }
+  .decorativeImage {
+    width: 250px;
+    height: 250px;
+    right: -120px;
+    opacity: 0.3;
+  }
+}
