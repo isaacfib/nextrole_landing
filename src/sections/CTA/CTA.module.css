@@ -1,0 +1,137 @@
+/* nextrole_landing/src/sections/CTA/CTA.module.css */
+.ctaSection {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  margin: 80px 0;
+}
+
+.ctaSectionContainer {
+  position: relative;
+  width: 90%;
+  max-width: 1340px;
+  min-height: 466px;
+  background: linear-gradient(101.79deg, #2D0075 28%, #9C38E9 89.84%);
+  box-shadow: 0px 4px 200px #F3F3F7;
+  border-radius: 16px;
+  overflow: hidden;
+  padding: 60px 70px;
+  box-sizing: border-box;
+}
+
+.ctaDecorativeShape {
+  position: absolute;
+  width: 573px;
+  height: 585px;
+  right: 0;
+  top: 71px;
+  background: #1A1A1A;
+  mix-blend-mode: soft-light;
+  opacity: 0.4;
+  z-index: 1;
+}
+
+.ctaHeading {
+  position: relative;
+  max-width: 443px;
+  font-family: "AktivGrotesk-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 48px;
+  line-height: 57px;
+  letter-spacing: -0.03em;
+  color: #F6F8FC;
+  margin: 0 0 40px 0;
+  z-index: 2;
+}
+
+.ctaButton {
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 21px 18px;
+  width: 345px;
+  height: 55px;
+  background: #4938E9;
+  border: 1px solid #1600E3;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 2;
+  font-family: "AktivGrotesk-Medium", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #FFFFFF;
+  transition: background-color 0.3s ease;
+}
+
+.ctaButton:hover {
+  background: #3929d0;
+}
+
+@media (max-width: 1200px) {
+  .ctaSectionContainer {
+    padding: 50px 60px;
+  }
+  .ctaHeading {
+    font-size: 42px;
+    line-height: 50px;
+    max-width: 400px;
+  }
+}
+
+@media (max-width: 992px) {
+  .ctaDecorativeShape {
+    width: 400px;
+    height: 400px;
+  }
+  .ctaHeading {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 350px;
+  }
+  .ctaButton {
+    width: 320px;
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .ctaSectionContainer {
+    padding: 40px 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .ctaDecorativeShape {
+    display: none;
+  }
+  .ctaHeading {
+    font-size: 32px;
+    line-height: 40px;
+    max-width: 100%;
+    margin-bottom: 30px;
+  }
+  .ctaButton {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ctaSectionContainer {
+    padding: 30px 20px;
+  }
+  .ctaHeading {
+    font-size: 28px;
+    line-height: 36px;
+  }
+  .ctaButton {
+    padding: 16px 14px;
+    font-size: 15px;
+  }
+}
