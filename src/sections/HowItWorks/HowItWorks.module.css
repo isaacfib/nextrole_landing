@@ -1,0 +1,206 @@
+/* nextrole_landing/src/sections/HowItWorks/HowItWorks.module.css */
+.howItWorksSection {
+  position: relative;
+  padding: 6rem 1rem;
+  overflow: hidden;
+  max-width: 100%;
+}
+
+.backgroundBlur {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  left: -10%;
+  top: -5%;
+  background: #D9D4F6;
+  opacity: 0.35;
+  filter: blur(75px);
+  transform: rotate(-13.92deg);
+  z-index: -1;
+}
+
+.title {
+  font-size: 3rem;
+  line-height: 1.15;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #030513;
+  margin: 0 auto 4rem;
+  max-width: 100%;
+}
+
+.stepsContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 1.625rem;
+  margin: 0 auto 4rem;
+  max-width: 1310px;
+  justify-content: center;
+}
+
+.step {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+  max-width: 419px;
+  border-radius: 40px;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+}
+
+.stepTopBg {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 3rem 2.5rem;
+  width: 100%;
+  height: 362px;
+  background: #F7F3FF;
+  border-radius: 40px 40px 0 0;
+  overflow: hidden;
+}
+
+.stepImage {
+  position: absolute;
+  z-index: 0;
+}
+
+.stepImage1 {
+  width: 450px;
+  height: 450px;
+  left: 149.02px;
+  top: -46px;
+  transform: rotate(33.9deg);
+}
+
+.stepImage2 {
+  width: 613.89px;
+  height: 613.89px;
+  left: -219px;
+  top: 172.83px;
+  transform: rotate(-30.53deg);
+}
+
+.stepImage3 {
+  width: 502px;
+  height: 502px;
+  left: -38px;
+  top: 11px;
+}
+
+.stepBottomContent {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 1.5rem 2.5rem;
+  width: 100%;
+  background: #FAFAFA;
+  border-radius: 0 0 40px 40px;
+  flex-grow: 1;
+}
+
+.stepTextContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.stepTitle {
+  font-size: 1.75rem;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #030513;
+  margin: 0;
+}
+
+.stepDescription {
+  font-size: 1.3125rem;
+  line-height: 1.25;
+  letter-spacing: -0.03em;
+  color: #8A859E;
+  margin: 0;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 0.9375rem;
+  width: 330px;
+  height: 60px;
+  background: #4938E9;
+  border: 1px solid #1600E3;
+  border-radius: 4px;
+  font-size: 1.3125rem;
+  color: #FFFFFF;
+  letter-spacing: -0.03em;
+  cursor: pointer;
+  margin: 0 auto;
+  transition: background-color 0.2s ease;
+}
+
+.button:hover {
+  background-color: #3c2cd0;
+}
+
+@media screen and (max-width: 1024px) {
+  .stepsContainer {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    margin-bottom: 3rem;
+  }
+  .step {
+    width: 85%;
+    max-width: 420px;
+  }
+  .title {
+    font-size: 2.25rem;
+    margin-bottom: 3rem;
+  }
+  .stepTitle {
+    font-size: 1.5rem;
+  }
+  .stepDescription {
+    font-size: 1.125rem;
+  }
+  .howItWorksSection {
+    padding: 3.75rem 1rem;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .step {
+    width: 95%;
+    max-width: 100%;
+    margin-bottom: 1.5rem;
+  }
+  .title {
+    font-size: 2rem;
+    margin-bottom: 2.5rem;
+  }
+  .stepTitle {
+    font-size: 1.375rem;
+  }
+  .stepDescription {
+    font-size: 1.0625rem;
+    line-height: 1.4;
+  }
+  .button {
+    width: 85%;
+    max-width: 330px;
+    font-size: 1.1875rem;
+    padding: 0.875rem 0.9375rem;
+  }
+  .howItWorksSection {
+    padding: 2.5rem 1rem;
+  }
+  .stepImage {
+    display: none;
+  }
+}
