@@ -1,0 +1,194 @@
+/* nextrole_landing/src/sections/SocialProof/SocialProof.module.css */
+.socialProofSection {
+  position: relative;
+  width: 100%;
+  padding: 120px 0;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #FFFFFF;
+}
+
+.title {
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 54px;
+  line-height: 63px;
+  text-align: center;
+  letter-spacing: -0.03em;
+  color: #030513;
+  margin-bottom: 60px;
+  max-width: 664px;
+}
+
+.headshotsContainer {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  height: 220px;
+  margin-bottom: 40px;
+}
+
+.headshotImage {
+  position: absolute;
+  width: 149px;
+  height: 149px;
+  border-radius: 50%;
+  object-fit: cover;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  border: 4px solid #FFFFFF;
+}
+
+.headshotImage1 { top: 0; left: calc(50% - 350px); }
+.headshotImage2 { top: 30px; left: calc(50% - 200px); }
+.headshotImage3 { top: 50px; left: calc(50% - 50px); }
+.headshotImage4 { top: 50px; left: calc(50% + 100px); }
+.headshotImage5 { top: 30px; left: calc(50% + 250px); }
+.headshotImage6 { top: 0; left: calc(50% + 400px); }
+
+.testimonialsContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+  width: 100%;
+  max-width: 900px;
+  flex-wrap: wrap;
+}
+
+.testimonialBadge {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 10px 16px;
+  gap: 8px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow: 0px 4px 24px rgba(217, 225, 255, 0.4);
+  backdrop-filter: blur(4px);
+  border-radius: 40px;
+  border: 1px solid #D9E1FF;
+}
+
+.testimonialIcon {
+  width: 16px;
+  height: 16px;
+}
+
+.testimonialText {
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: -0.03em;
+  color: #030513;
+  margin: 0;
+}
+
+.decorativeEllipse {
+  position: absolute;
+  background: #4938E9;
+  border-radius: 50%;
+  opacity: 0.2;
+}
+
+.decorativeEllipse1 { width: 20px; height: 20px; left: 10%; top: 20%; }
+.decorativeEllipse2 { width: 15px; height: 15px; left: 15%; top: 35%; }
+.decorativeEllipse3 { width: 25px; height: 25px; right: 12%; top: 25%; }
+.decorativeEllipse4 { width: 18px; height: 18px; right: 18%; top: 40%; }
+.decorativeEllipse5 { width: 22px; height: 22px; left: 20%; top: 60%; }
+.decorativeEllipse6 { width: 16px; height: 16px; right: 15%; top: 55%; }
+.decorativeEllipse7 { width: 30px; height: 30px; left: 8%; top: 75%; }
+.decorativeEllipse8 { width: 14px; height: 14px; right: 20%; top: 70%; }
+.decorativeEllipse9 { width: 24px; height: 24px; left: 25%; top: 15%; }
+.decorativeEllipse10 { width: 19px; height: 19px; right: 10%; top: 80%; }
+.decorativeEllipse11 { width: 17px; height: 17px; left: 30%; top: 45%; }
+.decorativeEllipse12 { width: 21px; height: 21px; right: 25%; top: 65%; }
+
+@media screen and (max-width: 1200px) {
+  .headshotImage1 { left: calc(50% - 300px); }
+  .headshotImage2 { left: calc(50% - 180px); }
+  .headshotImage3 { left: calc(50% - 60px); }
+  .headshotImage4 { left: calc(50% + 60px); }
+  .headshotImage5 { left: calc(50% + 180px); }
+  .headshotImage6 { left: calc(50% + 300px); }
+}
+
+@media screen and (max-width: 992px) {
+  .title {
+    font-size: 42px;
+    line-height: 50px;
+    max-width: 500px;
+  }
+  .headshotsContainer {
+    height: 180px;
+  }
+  .headshotImage {
+    width: 120px;
+    height: 120px;
+  }
+  .headshotImage1 { left: calc(50% - 250px); }
+  .headshotImage2 { left: calc(50% - 150px); }
+  .headshotImage3 { left: calc(50% - 50px); }
+  .headshotImage4 { left: calc(50% + 50px); }
+  .headshotImage5 { left: calc(50% + 150px); }
+  .headshotImage6 { left: calc(50% + 250px); }
+}
+
+@media screen and (max-width: 768px) {
+  .socialProofSection {
+    padding: 80px 0;
+  }
+  .title {
+    font-size: 36px;
+    line-height: 44px;
+    max-width: 400px;
+  }
+  .headshotsContainer {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    height: auto;
+    padding: 0 20px;
+  }
+  .headshotImage {
+    position: static;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+  }
+  .testimonialsContainer {
+    flex-direction: column;
+    gap: 20px;
+  }
+  .testimonialBadge {
+    width: 90%;
+    max-width: 400px;
+  }
+  .decorativeEllipse1, .decorativeEllipse3, .decorativeEllipse5,
+  .decorativeEllipse7, .decorativeEllipse9, .decorativeEllipse11 {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .title {
+    font-size: 36px;
+    line-height: 42px;
+    max-width: 300px;
+  }
+  .headshotsContainer {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .headshotImage5, .headshotImage6 {
+    display: none;
+  }
+  .testimonialText {
+    font-size: 14px;
+  }
+  .decorativeEllipse2, .decorativeEllipse4, .decorativeEllipse8, .decorativeEllipse10 {
+    display: none;
+  }
+}
