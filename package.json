@@ -1,0 +1,35 @@
+{
+  "name": "nextrole_landing",
+  "version": "1.0.0",
+  "description": "Landing page for Nextrole - Unlock Your Career Potential with AI-Powered Tools",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.4.0"
+  },
+  "devDependencies": {
+    "@vitejs/plugin-react": "^4.0.0",
+    "eslint": "^8.0.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-react": "^7.26.0",
+    "prettier": "^2.4.1",
+    "vite": "^4.0.0"
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/isaacfib/nextrole_landing.git"
+  },
+  "bugs": {
+    "url": "https://github.com/isaacfib/nextrole_landing/issues"
+  },
+  "homepage": "https://github.com/isaacfib/nextrole_landing#readme"
+}
