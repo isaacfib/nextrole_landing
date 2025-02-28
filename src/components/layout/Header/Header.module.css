@@ -1,0 +1,198 @@
+/* nextrole_landing/src/components/layout/Header/Header.module.css */
+.headerSection {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 100;
+  transition: all 0.3s ease;
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.scrolled {
+  height: 80px;
+  background-color: rgba(255, 255, 255, 0.95);
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(5px);
+}
+
+.headerContent {
+  width: 100%;
+  max-width: 1400px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px;
+}
+
+.headerLogoAreaContainer {
+  height: 29px;
+  display: flex;
+  align-items: center;
+}
+
+.logoContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+}
+
+.logoImage {
+  width: 28.45px;
+  height: 29px;
+}
+
+.logoText {
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 29px;
+  letter-spacing: -0.03em;
+  color: #1A1A1A;
+}
+
+.headerNavBar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 32px;
+}
+
+.headerNavLink {
+  font-family: "AktivGrotesk-Regular", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  letter-spacing: -0.03em;
+  color: #030513;
+  text-decoration: none;
+  transition: color 0.2s ease;
+  position: relative;
+}
+
+.headerNavLink:after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #4938E9;
+  transition: width 0.3s ease;
+}
+
+.headerNavLink:hover {
+  color: #4938E9;
+}
+
+.headerNavLink:hover:after {
+  width: 100%;
+}
+
+.headerSignupButton {
+  margin-left: 10px;
+}
+
+.mobileMenuButton {
+  display: none;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 30px;
+  height: 21px;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  z-index: 10;
+}
+
+.menuBar {
+  width: 30px;
+  height: 3px;
+  background-color: #1A1A1A;
+  border-radius: 3px;
+  transition: all 0.3s ease;
+}
+
+.menuBar.active:nth-child(1) {
+  transform: translateY(9px) rotate(45deg);
+}
+
+.menuBar.active:nth-child(2) {
+  opacity: 0;
+}
+
+.menuBar.active:nth-child(3) {
+  transform: translateY(-9px) rotate(-45deg);
+}
+
+@media (max-width: 1280px) {
+  .headerContent {
+    padding: 0 60px;
+  }
+}
+
+@media (max-width: 1024px) {
+  .headerContent {
+    padding: 0 40px;
+  }
+  .headerNavBar {
+    gap: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerContent {
+    padding: 0 30px;
+  }
+  .mobileMenuButton {
+    display: flex;
+  }
+  .headerNavBar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 70%;
+    max-width: 300px;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    background-color: white;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    padding: 20px;
+  }
+  .mobileMenuActive {
+    right: 0;
+  }
+  .headerNavLink {
+    font-size: 20px;
+  }
+  .headerSignupButton {
+    margin-left: 0;
+    margin-top: 10px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerSection {
+    height: 80px;
+  }
+  .headerContent {
+    padding: 0 20px;
+  }
+  .logoText {
+    font-size: 20px;
+  }
+  .logoImage {
+    width: 24px;
+    height: 24px;
+  }
+}
