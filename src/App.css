@@ -1,0 +1,16 @@
+/* nextrole_landing/src/App.css */
+.app {
+  max-width: 100%;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.main-content {
+  padding-top: 100px;
+}
+
+@media (max-width: 768px) {
+  .main-content {
+    padding-top: 80px;
+  }
+}
