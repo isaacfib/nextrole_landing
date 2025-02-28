@@ -15,3 +15,22 @@ Unlock Your Career Potential with AI-Powered Tools. This is the landing page for
    ```bash
    git clone https://github.com/isaacfib/nextrole_landing.git
    cd nextrole_landing
+
+Project Structure:
+nextrole_landing/
+├── public/
+│   ├── assets/
+│   │   ├── fonts/
+│   │   └── images/
+│   └── index.html
+├── src/
+│   ├── components/
+│   │   ├── layout/
+│   │   └── ui/
+│   ├── sections/
+│   ├── App.jsx
+│   ├── App.css
+│   ├── main.jsx
+│   └── index.css
+├── vite.config.js
+└── package.json
