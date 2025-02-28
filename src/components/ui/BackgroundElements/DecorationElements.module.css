@@ -1,0 +1,151 @@
+/* nextrole_landing/src/components/ui/BackgroundElements/DecorationElements.module.css */
+.headerLinesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 42px;
+  position: absolute;
+  width: 100%;
+  height: 902px;
+  left: 0;
+  top: 0;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.headerVerticalLine {
+  width: 902px;
+  height: 0;
+  border-left: 1px solid rgba(217, 225, 255, 0.3);
+  transform: rotate(90deg);
+  flex: none;
+  flex-grow: 0;
+}
+
+.headerHorizontalLinesContainer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 0;
+  gap: 42px;
+  position: absolute;
+  width: 840px;
+  height: 100%;
+  left: 0;
+  top: 840px;
+  transform: rotate(-90deg);
+  transform-origin: top left;
+  z-index: 0;
+  overflow: hidden;
+}
+
+.headerHorizontalLine {
+  width: 100%;
+  height: 0;
+  border-top: 1px solid rgba(217, 225, 255, 0.3);
+  flex: none;
+  flex-grow: 0;
+}
+
+.blurredBackgroundShape {
+  position: absolute;
+  width: 1720px;
+  height: 3353px;
+  opacity: 0.35;
+  filter: blur(75px);
+  z-index: -1;
+}
+
+.layeredCirclesContainer {
+  position: relative;
+  width: 1362px;
+  height: 1362px;
+  z-index: 0;
+}
+
+.circleOuter,
+.circleMiddle,
+.circleInner {
+  box-sizing: border-box;
+  position: absolute;
+  background: linear-gradient(145.59deg, #FFFFFF 7.5%, #F7F8FF 88.77%);
+  border: 2px solid #F3F6FE;
+  box-shadow: 0px 4px 200px rgba(217, 225, 255, 0.4);
+  border-radius: 40px;
+}
+
+.circleOuter {
+  width: 1362px;
+  height: 1362px;
+  left: 0;
+  top: 0;
+}
+
+.circleMiddle {
+  width: 1100px;
+  height: 1100px;
+  left: 131px;
+  top: 131px;
+}
+
+.circleInner {
+  width: 800px;
+  height: 800px;
+  left: 281px;
+  top: 281px;
+}
+
+.gradientWashEllipse {
+  position: absolute;
+  width: 100%;
+  height: 1541px;
+  background: linear-gradient(23.48deg, #F6F9FF 63.6%, rgba(247, 248, 255, 0) 86.96%);
+  border-radius: 40px;
+  z-index: -1;
+}
+
+.decorativeDot {
+  position: absolute;
+  background: #FFFFFF;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+@media (max-width: 1200px) {
+  .layeredCirclesContainer,
+  .circleOuter,
+  .circleMiddle,
+  .circleInner {
+    transform: scale(0.8);
+    transform-origin: center;
+  }
+  .blurredBackgroundShape {
+    width: 120%;
+    height: 120%;
+  }
+}
+
+@media (max-width: 768px) {
+  .headerLinesContainer,
+  .headerHorizontalLinesContainer {
+    gap: 30px;
+  }
+  .layeredCirclesContainer,
+  .circleOuter,
+  .circleMiddle,
+  .circleInner {
+    transform: scale(0.6);
+    transform-origin: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .headerLinesContainer,
+  .headerHorizontalLinesContainer {
+    gap: 20px;
+  }
+  .layeredCirclesContainer {
+    transform: scale(0.4);
+  }
+}
