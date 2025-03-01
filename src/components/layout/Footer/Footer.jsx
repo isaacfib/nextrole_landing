@@ -1,5 +1,6 @@
-// nextrole_landing/src/components/layout/Footer/Footer.jsx
+// src/components/layout/Footer/Footer.jsx
 import React from "react";
+import { Link } from "react-router-dom";
 import styles from "./Footer.module.css";
 
 const Footer = () => {
@@ -17,27 +18,17 @@ const Footer = () => {
           <span className={styles.footerLogoText}>Nextrole</span>
         </div>
         <nav className={styles.footerNavLinksContainer}>
-          <a href="#" className={styles.footerNavLink}>
-            About
-          </a>
-          <a href="#" className={styles.footerNavLink}>
-            Contact Us
-          </a>
-          <a href="#" className={styles.footerNavLink}>
-            Privacy Policy
-          </a>
-          <a href="#" className={styles.footerNavLink}>
-            Term of Service
-          </a>
-          <a href="#" className={styles.footerNavLink}>
-            Blog
-          </a>
+          <Link to="/" className={styles.footerNavLink}>Home</Link>
+          <Link to="/about" className={styles.footerNavLink}>About</Link>
+          <Link to="/contact" className={styles.footerNavLink}>Contact</Link>
+          <Link to="/privacy" className={styles.footerNavLink}>Privacy</Link>
+          <Link to="/terms" className={styles.footerNavLink}>Terms</Link>
         </nav>
       </div>
       <hr className={styles.footerSeparatorLine} />
       <div className={styles.footerBottom}>
         <p className={styles.footerCopyrightText}>
-          Copyright: © {currentYear} Nextrole Inc. All rights reserved.
+          © {currentYear} Nextrole Inc. Local Development Preview
         </p>
       </div>
     </footer>
