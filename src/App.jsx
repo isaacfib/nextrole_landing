@@ -42,6 +42,8 @@ function App() {
           <Route path="/privacy-policy" element={<Privacy />} />
           <Route path="/terms-of-service" element={<Terms />} />
           <Route path="/blog" element={<Blog />} />
+
+          <Route path="/test" element={<div>Test Route Working!</div>} />
         </Routes>
       </main>
       <Footer />
