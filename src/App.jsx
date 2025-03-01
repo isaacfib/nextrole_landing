@@ -43,7 +43,13 @@ function App() {
           <Route path="/terms-of-service" element={<Terms />} />
           <Route path="/blog" element={<Blog />} />
 
-          <Route path="/test" element={<div>Test Route Working!</div>} />
+          <Route path="*" element={
+  <div style={{ padding: '2rem', textAlign: 'center' }}>
+    <h1>Welcome to Nextrole!</h1>
+    <p>If you see this, routing is working but content isn't loading.</p>
+    <button onClick={() => window.location.reload()}>Refresh Page</button>
+  </div>
+} />
         </Routes>
       </main>
       <Footer />
