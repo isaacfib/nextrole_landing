@@ -6,11 +6,13 @@ export default defineConfig({
   server: {
     port: 5173,
     strictPort: true,
-    open: true
+    open: true,
+    host: true
   },
   build: {
     outDir: "dist",
     assetsDir: "assets",
     emptyOutDir: true
-  }
+  },
+  base: "./" // Critical change
 });
