@@ -23,6 +23,17 @@ function App() {
       <Header />
       <main className="main-content">
         <Routes>
+          <Route index element={
+  <>
+    <Hero />
+    <Features />
+    <HowItWorks />
+    <SocialProof />
+    <WhyChooseUs />
+    <FAQ />
+    <CTA />
+  </>
+} />
           {/* Homepage Route */}
           <Route path="/" element={
             <>
@@ -48,6 +59,12 @@ function App() {
     <h1>Welcome to Nextrole!</h1>
     <p>If you see this, routing is working but content isn't loading.</p>
     <button onClick={() => window.location.reload()}>Refresh Page</button>
+  </div>
+} />
+          <Route path="*" element={
+  <div style={{ padding: '2rem', textAlign: 'center' }}>
+    <h1>Welcome to Nextrole!</h1>
+    <p>Page not found - <a href="/">Return home</a></p>
   </div>
 } />
         </Routes>
