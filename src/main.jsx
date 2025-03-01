@@ -4,7 +4,18 @@ import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
+import history from './history';
 
+// Wrap App with HistoryRouter
+import { unstable_HistoryRouter as HistoryRouter } from 'react-router-dom';
+
+ReactDOM.createRoot(document.getElementById('root')).render(
+  <React.StrictMode>
+    <HistoryRouter history={history}>
+      <App />
+    </HistoryRouter>
+  </React.StrictMode>
+);
 // Get the root element
 const rootElement = document.getElementById("root");
 
