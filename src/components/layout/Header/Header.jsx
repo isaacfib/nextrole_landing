@@ -1,7 +1,7 @@
 // nextrole_landing/src/components/layout/Header/Header.jsx
 import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
-import { Button } from "../../ui/Button";
+import Button from "../../ui/Button";
 import styles from "./Header.module.css";
 
 const Header = () => {
