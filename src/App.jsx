@@ -38,9 +38,9 @@ function App() {
 
           {/* Supporting Pages */}
           <Route path="/about" element={<About />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/privacy" element={<Privacy />} />
-          <Route path="/terms" element={<Terms />} />
+          <Route path="/contact-us" element={<Contact />} />
+          <Route path="/privacy-policy" element={<Privacy />} />
+          <Route path="/terms-of-service" element={<Terms />} />
           <Route path="/blog" element={<Blog />} />
         </Routes>
       </main>
