@@ -44,7 +44,7 @@ const Header = () => {
           <Link to="/about" className={styles.headerNavLink}>
             About
           </Link>
-          <Link to="/contact" className={styles.headerNavLink}>
+          <Link to="/contact-us" className={styles.headerNavLink}>
             Contact Us
           </Link>
           <Link to="/blog" className={styles.headerNavLink}>
