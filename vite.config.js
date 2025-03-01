@@ -1,5 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
+import { resolve } from "path";
 
 export default defineConfig({
   plugins: [react()],
@@ -7,11 +8,18 @@ export default defineConfig({
     host: true,
     port: 5173,
     strictPort: true,
-    open: "/"
+    open: true,
+    // Add history API fallback
+    historyApiFallback: {
+      index: '/index.html'
+    }
   },
+  base: '/',
   build: {
-    outDir: "dist",
-    emptyOutDir: true
-  },
-  base: "/"
+    rollupOptions: {
+      input: {
+        main: resolve(__dirname, 'index.html')
+      }
+    }
+  }
 });
