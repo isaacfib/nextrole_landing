@@ -1,11 +1,18 @@
-// nextrole_landing/src/main.jsx
+// src/main.jsx
 import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter } from "react-router-dom";
 import App from "./App";
 import "./index.css";
 
-ReactDOM.createRoot(document.getElementById("root")).render(
+// Get the root element
+const rootElement = document.getElementById("root");
+
+// Check if element exists
+if (!rootElement) throw new Error("Root element not found");
+
+// Create root and render
+ReactDOM.createRoot(rootElement).render(
   <React.StrictMode>
     <BrowserRouter>
       <App />
