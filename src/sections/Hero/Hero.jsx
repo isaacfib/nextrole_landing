@@ -1,6 +1,6 @@
 // nextrole_landing/src/sections/Hero/Hero.jsx
 import React from "react";
-import { Button } from "../../components/ui/Button";
+import Button from "../../components/ui/Button";
 import styles from "./Hero.module.css";
 
 const Hero = () => {
