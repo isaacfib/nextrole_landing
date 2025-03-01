@@ -20,9 +20,10 @@ const Footer = () => {
         <nav className={styles.footerNavLinksContainer}>
           <Link to="/" className={styles.footerNavLink}>Home</Link>
           <Link to="/about" className={styles.footerNavLink}>About</Link>
-          <Link to="/contact" className={styles.footerNavLink}>Contact</Link>
-          <Link to="/privacy" className={styles.footerNavLink}>Privacy</Link>
-          <Link to="/terms" className={styles.footerNavLink}>Terms</Link>
+          <Link to="/contact-us" className={styles.footerNavLink}>Contact Us</Link>
+          <Link to="/privacy-policy" className={styles.footerNavLink}>Privacy Policy</Link>
+          <Link to="/terms-of-service" className={styles.footerNavLink}>Terms of Service</Link>
+          <Link to="/blog" className={styles.footerNavLink}>Blog</Link>
         </nav>
       </div>
       <hr className={styles.footerSeparatorLine} />
