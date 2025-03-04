@@ -1,4 +1,4 @@
-// nextrole_landing/src/sections/Hero/Hero.jsx
+// nextrole_landing/src/sections/Hero/Hero.jsx (Updated with relative image paths)
 import React from "react";
 import Button from "../../components/ui/Button";
 import styles from "./Hero.module.css";
@@ -37,7 +37,7 @@ const Hero = () => {
       <div className={`${styles.heroBadge} ${styles.heroBadgeCongrats}`}>
         <div className={styles.badgeIconWrapper}>
           <img
-            src="/assets/images/star-icon.svg"
+            src="assets/images/star-icon.svg"  {/* Changed to relative path */}
             alt=""
             className={`${styles.badgeStarIcon} ${styles.congrats}`}
           />
@@ -48,7 +48,7 @@ const Hero = () => {
       <div className={`${styles.heroBadge} ${styles.heroBadgeQualified}`}>
         <div className={styles.badgeIconWrapper}>
           <img
-            src="/assets/images/star-icon.svg"
+            src="assets/images/star-icon.svg"  {/* Changed to relative path */}
             alt=""
             className={`${styles.badgeStarIcon} ${styles.qualified}`}
           />

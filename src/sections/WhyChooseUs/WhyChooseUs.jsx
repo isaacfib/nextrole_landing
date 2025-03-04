@@ -8,7 +8,7 @@ const WhyChooseUs = () => {
       <h2 className={styles.title}>Why choose us?</h2>
       <div className={`${styles.benefitPoint} ${styles.benefitPoint1}`}>
         <img
-          src="/assets/images/magic-wand-01.svg"
+          src="assets/images/magic-wand-01.svg"  {/* Relative path */}
           alt="AI-Powered Personalization Icon"
           className={styles.benefitIcon}
           aria-hidden="true"
@@ -23,7 +23,7 @@ const WhyChooseUs = () => {
       <div className={`${styles.verticalLine} ${styles.verticalLine1}`}></div>
       <div className={`${styles.benefitPoint} ${styles.benefitPoint2}`}>
         <img
-          src="/assets/images/cube-outline.svg"
+          src="assets/images/cube-outline.svg"  {/* Relative path */}
           alt="One Platform, Many Solutions Icon"
           className={styles.benefitIcon}
           aria-hidden="true"
@@ -36,7 +36,7 @@ const WhyChooseUs = () => {
       <div className={`${styles.verticalLine} ${styles.verticalLine2}`}></div>
       <div className={`${styles.benefitPoint} ${styles.benefitPoint3}`}>
         <img
-          src="/assets/images/star-02.svg"
+          src="assets/images/star-02.svg"  {/* Relative path */}
           alt="Results That Matter Icon"
           className={styles.benefitIcon}
           aria-hidden="true"
@@ -51,7 +51,7 @@ const WhyChooseUs = () => {
       <div className={`${styles.verticalLine} ${styles.verticalLine3}`}></div>
       <div className={`${styles.benefitPoint} ${styles.benefitPoint4}`}>
         <img
-          src="/assets/images/users-03.svg"
+          src="assets/images/users-03.svg"  {/* Relative path */}
           alt="Trusted by Thousands Icon"
           className={styles.benefitIcon}
           aria-hidden="true"
@@ -64,7 +64,7 @@ const WhyChooseUs = () => {
       <div className={`${styles.verticalLine} ${styles.verticalLine4}`}></div>
       <button className={styles.ctaButton}>Join thousands of satisfied job seekers</button>
       <div className={styles.decorativeImage}>
-        <img src="/assets/images/image-27.png" alt="" aria-hidden="true" />
+        <img src="assets/images/image-27.png" alt="" aria-hidden="true" /> {/* Relative path */}
       </div>
     </section>
   );

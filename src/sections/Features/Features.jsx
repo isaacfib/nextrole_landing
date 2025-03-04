@@ -9,42 +9,42 @@ const Features = () => {
       title: "Resume Optimizer",
       description:
         "Our AI analyzes your resume and provides actionable tips to make it stand out. Get past the ATS and impress hiring managers.",
-      icon: "/assets/images/feature-resume-optimizer-icon.svg",
+      icon: "assets/images/feature-resume-optimizer-icon.svg", // Relative path
     },
     {
       id: "interview-prep",
       title: "Interview Prep",
       description:
         "Practice with AI-driven mock interviews tailored to your role. Receive feedback on body language, tone, and answers.",
-      icon: "/assets/images/feature-interview-prep-icon.svg",
+      icon: "assets/images/feature-interview-prep-icon.svg", // Relative path
     },
     {
       id: "skill-assessment",
       title: "Skill Assessment",
       description:
         "Identify the skills employers are looking for in your industry and level up with personalized recommendations.",
-      icon: "/assets/images/feature-skill-assessment-icon.svg",
+      icon: "assets/images/feature-skill-assessment-icon.svg", // Relative path
     },
     {
       id: "matching-job-board",
       title: "Matching Job Board",
       description:
         "Stop scrolling endlessly. Discover job listings perfectly matched to your profile and preferences.",
-      icon: "/assets/images/feature-matching-job-board-icon.svg",
+      icon: "assets/images/feature-matching-job-board-icon.svg", // Relative path
     },
     {
       id: "easy-application",
       title: "Easy Application Process",
       description:
         "Apply with one click and track your application progress all from a single dashboard.",
-      icon: "/assets/images/feature-easy-application-icon.svg",
+      icon: "assets/images/feature-easy-application-icon.svg", // Relative path
     },
     {
       id: "skill-assessment-duplicate",
       title: "Skill Assessment",
       description:
         "Identify the skills employers are looking for in your industry and level up with personalized recommendations.",
-      icon: "/assets/images/feature-skill-assessment-icon.svg",
+      icon: "assets/images/feature-skill-assessment-icon.svg", // Relative path
     },
   ];
 

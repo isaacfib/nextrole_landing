@@ -9,32 +9,32 @@ const SocialProof = () => {
       <div className={styles.headshotsContainer}>
         <img
           className={`${styles.headshotImage} ${styles.headshotImage1}`}
-          src="/assets/images/headshot-1.png"
+          src="assets/images/headshot-1.png"  {/* Relative path */}
           alt="Professional Headshot 1"
         />
         <img
           className={`${styles.headshotImage} ${styles.headshotImage2}`}
-          src="/assets/images/headshot-2.png"
+          src="assets/images/headshot-2.png"  {/* Relative path */}
           alt="Professional Headshot 2"
         />
         <img
           className={`${styles.headshotImage} ${styles.headshotImage3}`}
-          src="/assets/images/headshot-3.png"
+          src="assets/images/headshot-3.png"  {/* Relative path */}
           alt="Professional Headshot 3"
         />
         <img
           className={`${styles.headshotImage} ${styles.headshotImage4}`}
-          src="/assets/images/headshot-4.png"
+          src="assets/images/headshot-4.png"  {/* Relative path */}
           alt="Professional Headshot 4"
         />
         <img
           className={`${styles.headshotImage} ${styles.headshotImage5}`}
-          src="/assets/images/headshot-5.png"
+          src="assets/images/headshot-5.png"  {/* Relative path */}
           alt="Professional Headshot 5"
         />
         <img
           className={`${styles.headshotImage} ${styles.headshotImage6}`}
-          src="/assets/images/headshot-6.png"
+          src="assets/images/headshot-6.png"  {/* Relative path */}
           alt="Professional Headshot 6"
         />
       </div>
@@ -42,7 +42,7 @@ const SocialProof = () => {
         <div className={`${styles.testimonialBadge} ${styles.testimonialBadge1}`}>
           <img
             className={styles.testimonialIcon}
-            src="/assets/images/testimonial-icon-checkmark.png"
+            src="assets/images/testimonial-icon-checkmark.png"  {/* Relative path */}
             alt="Testimonial Checkmark Icon"
             aria-hidden="true"
           />
@@ -53,7 +53,7 @@ const SocialProof = () => {
         <div className={`${styles.testimonialBadge} ${styles.testimonialBadge2}`}>
           <img
             className={styles.testimonialIcon}
-            src="/assets/images/testimonial-icon-checkmark.png"
+            src="assets/images/testimonial-icon-checkmark.png"  {/* Relative path */}
             alt="Testimonial Checkmark Icon"
             aria-hidden="true"
           />
