@@ -9,16 +9,16 @@ export default defineConfig({
     port: 5173,
     strictPort: true,
     open: true,
-    // Add history API fallback
     historyApiFallback: {
       index: '/index.html'
     }
   },
-  base: './',
+  base: '/',  // Use absolute paths for GitHub Pages
   build: {
+    outDir: 'docs',  // Output built files to /docs
     rollupOptions: {
       input: {
-        main: resolve(__dirname, 'public/index.html')
+        main: resolve(new URL('public/index.html', import.meta.url).pathname)  // Entry point is root index.html
       }
     }
   }
