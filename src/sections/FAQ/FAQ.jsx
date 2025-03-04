@@ -62,7 +62,7 @@ const FAQ = () => {
         ))}
       </div>
       <div className={styles.faqDecorativeImage} aria-hidden="true">
-        <img src="assets/images/faq-bg-image.png" alt="" /> {/* Relative path */}
+        <img src="/assets/images/faq-bg-image.png" alt="" /> 
       </div>
     </section>
   );

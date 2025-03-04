@@ -37,7 +37,7 @@ const Hero = () => {
       <div className={`${styles.heroBadge} ${styles.heroBadgeCongrats}`}>
         <div className={styles.badgeIconWrapper}>
           <img
-            src="assets/images/star-icon.svg"  {/* Changed to relative path */}
+            src="/assets/images/star-icon.svg"  
             alt=""
             className={`${styles.badgeStarIcon} ${styles.congrats}`}
           />
@@ -48,7 +48,7 @@ const Hero = () => {
       <div className={`${styles.heroBadge} ${styles.heroBadgeQualified}`}>
         <div className={styles.badgeIconWrapper}>
           <img
-            src="assets/images/star-icon.svg"  {/* Changed to relative path */}
+            src="/assets/images/star-icon.svg"  
             alt=""
             className={`${styles.badgeStarIcon} ${styles.qualified}`}
           />

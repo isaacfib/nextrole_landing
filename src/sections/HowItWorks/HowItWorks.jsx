@@ -12,7 +12,7 @@ const HowItWorks = () => {
           <div className={styles.stepTopBg}>
             <img
               className={`${styles.stepImage} ${styles.stepImage1}`}
-              src="assets/images/how-it-works-step1.png"  {/* Relative path */}
+              src="/assets/images/how-it-works-step1.png"  
               alt=""
               aria-hidden="true"
             />
@@ -30,7 +30,7 @@ const HowItWorks = () => {
           <div className={styles.stepTopBg}>
             <img
               className={`${styles.stepImage} ${styles.stepImage2}`}
-              src="assets/images/how-it-works-step2.png"  {/* Relative path */}
+              src="/assets/images/how-it-works-step2.png"  
               alt=""
               aria-hidden="true"
             />
@@ -49,7 +49,7 @@ const HowItWorks = () => {
           <div className={styles.stepTopBg}>
             <img
               className={`${styles.stepImage} ${styles.stepImage3}`}
-              src="assets/images/how-it-works-step3.png"  {/* Relative path */}
+              src="/assets/images/how-it-works-step3.png"  
               alt=""
               aria-hidden="true"
             />
