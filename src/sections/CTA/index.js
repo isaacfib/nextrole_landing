@@ -1,2 +1,2 @@
 // nextrole_landing/src/sections/CTA/index.js
-export { default } from "./CTA";
+export { default as CTA } from "./CTA";

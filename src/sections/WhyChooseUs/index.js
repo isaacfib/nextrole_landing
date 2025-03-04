@@ -1,2 +1,2 @@
 // nextrole_landing/src/sections/WhyChooseUs/index.js
-export { default } from "./WhyChooseUs";
+export { default as WhyChooseUs } from "./WhyChooseUs";
