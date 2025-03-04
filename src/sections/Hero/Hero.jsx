@@ -72,8 +72,7 @@ const Hero = () => {
           </div>
           <span className={styles.badgeText}>You are 86% qualified for this role</span>
         </div>
-        </div> {/* This is the closing div tag you are missing */}
-      </div> {/* This is the closing div tag for headshotBadgeRight */}
+      </div>
     </section>
   );
 };
