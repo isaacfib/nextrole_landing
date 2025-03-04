@@ -1,337 +1,394 @@
 /* nextrole_landing/src/sections/Hero/Hero.module.css */
-.heroSection {
-  position: relative;
-  width: 100%;
-  min-height: 700px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 120px 20px 80px;
-  overflow: hidden;
-}
 
-.background {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  z-index: -1;
-}
+/* ==========================================================================
+   Hero Section - General styles
+   ========================================================================== */
 
-.blurredGradient1 {
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  left: -250px;
-  top: -200px;
-  background: radial-gradient(ellipse at center, rgba(106, 90, 255, 0.15) 0%, rgba(106, 90, 255, 0) 70%);
-  border-radius: 50%;
-  filter: blur(50px);
-}
-
-.blurredGradient2 {
-  position: absolute;
-  width: 600px;
-  height: 600px;
-  right: -150px;
-  top: 20%;
-  background: radial-gradient(ellipse at center, rgba(0, 176, 200, 0.1) 0%, rgba(0, 176, 200, 0) 70%);
-  border-radius: 50%;
-  filter: blur(60px);
-}
-
-.ellipse1 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  left: 15%;
-  top: 25%;
-  background: #4938E9;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.ellipse2 {
-  position: absolute;
-  width: 12px;
-  height: 12px;
-  left: 20%;
-  top: 40%;
-  border: 1px solid #4938E9;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-.ellipse3 {
-  position: absolute;
-  width: 6px;
-  height: 6px;
-  left: 12%;
-  top: 65%;
-  background: #00B0C8;
-  border-radius: 50%;
-  opacity: 0.6;
-}
-
-.ellipse4 {
-  position: absolute;
-  width: 10px;
-  height: 10px;
-  right: 25%;
-  top: 15%;
-  border: 1px solid #00B0C8;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-.ellipse5 {
-  position: absolute;
-  width: 8px;
-  height: 8px;
-  right: 18%;
-  top: 35%;
-  background: #4938E9;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.ellipse6 {
-  position: absolute;
-  width: 15px;
-  height: 15px;
-  right: 22%;
-  top: 60%;
-  border: 1px solid #4938E9;
-  border-radius: 50%;
-  opacity: 0.6;
-}
-
-.ellipse7 {
-  position: absolute;
-  width: 7px;
-  height: 7px;
-  right: 15%;
-  top: 75%;
-  background: #00B0C8;
-  border-radius: 50%;
-  opacity: 0.7;
-}
-
-.ellipse8 {
-  position: absolute;
-  width: 9px;
-  height: 9px;
-  left: 22%;
-  top: 80%;
-  border: 1px solid #00B0C8;
-  border-radius: 50%;
-  opacity: 0.5;
-}
-
-.rectangle {
-  position: absolute;
-  width: 30px;
-  height: 30px;
-  left: 75%;
-  top: 45%;
-  border: 1px solid rgba(106, 90, 255, 0.3);
-  transform: rotate(45deg);
-}
-
-.line {
-  position: absolute;
-  width: 150px;
-  height: 1px;
-  left: 10%;
-  top: 50%;
-  background: linear-gradient(90deg, rgba(106, 90, 255, 0) 0%, rgba(106, 90, 255, 0.5) 50%, rgba(106, 90, 255, 0) 100%);
-}
-
-.heroMainHeading {
-  max-width: 833px;
-  margin-bottom: 45px;
-  font-family: "AktivGrotesk-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 64px;
-  line-height: 70px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  background: linear-gradient(180deg, #030513 0%, #C8C0FF 142.5%);
-  -webkit-background-clip: text;
-  background-clip: text;
-  color: transparent;
-  position: relative;
-  z-index: 1;
-}
-
-.heroDescriptionText {
-  max-width: 580px;
-  margin-bottom: 54px;
-  font-family: "AktivGrotesk-Regular", sans-serif;
-  font-weight: 400;
-  font-size: 21px;
-  line-height: 28px;
-  text-align: center;
-  letter-spacing: -0.03em;
-  color: #8A859E;
-  position: relative;
-  z-index: 1;
-}
-
-.heroCTAButton {
-  width: 199px;
-  margin-bottom: 60px;
-  position: relative;
-  z-index: 1;
-}
-
-.heroBadge {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  padding: 7.84615px;
-  gap: 3.14px;
-  height: 26.68px;
-  position: absolute;
-  backdrop-filter: blur(1.56923px);
-  border-radius: 78.4615px;
-  z-index: 2;
-  animation: float 6s ease-in-out infinite;
-}
-
-@keyframes float {
-  0% { transform: translateY(0px); }
-  50% { transform: translateY(-10px); }
-  100% { transform: translateY(0px); }
-}
-
-.heroBadgeCongrats {
-  left: 15%;
-  top: 55%;
-  width: 157.82px;
-  background: rgba(234, 224, 255, 0.52);
-  animation-delay: 0.5s;
-}
-
-.heroBadgeQualified {
-  right: 15%;
-  top: 65%;
-  width: 196.82px;
-  background: rgba(224, 255, 252, 0.52);
-  animation-delay: 1s;
-}
-
-.badgeIconWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.badgeStarIcon {
-  width: 10.98px;
-  height: 10.98px;
-  padding: 2px;
-  border-radius: 50%;
-}
-
-.badgeStarIcon.congrats {
-  border: 0.915385px solid #591FD3;
-}
-
-.badgeStarIcon.qualified {
-  border: 0.915385px solid #00521D;
-}
-
-.badgeText {
-  font-family: "Inter", sans-serif;
-  font-weight: 600;
-  font-size: 10.9846px;
-  line-height: 13px;
-  letter-spacing: -0.03em;
-  white-space: nowrap;
-}
-
-.heroBadgeCongrats .badgeText {
-  color: #591FD3;
-}
-
-.heroBadgeQualified .badgeText {
-  color: #00521D;
-}
-
-@media (max-width: 1280px) {
-  .heroBadgeCongrats { left: 10%; }
-  .heroBadgeQualified { right: 10%; }
-}
-
-@media (max-width: 1024px) {
-  .heroMainHeading {
-    font-size: 54px;
-    line-height: 60px;
-    max-width: 700px;
-  }
-  .heroBadgeCongrats, .heroBadgeQualified {
-    transform: scale(0.9);
-  }
-}
-
-@media (max-width: 900px) {
-  .heroSection { padding-top: 100px; }
-  .heroMainHeading {
-    font-size: 48px;
-    line-height: 54px;
-    max-width: 600px;
-  }
-}
-
-@media (max-width: 768px) {
-  .heroSection {
-    padding-top: 80px;
-    padding-bottom: 120px;
-  }
-  .heroMainHeading {
-    font-size: 42px;
-    line-height: 48px;
-    max-width: 90%;
-  }
-  .heroDescriptionText {
-    font-size: 18px;
-    line-height: 24px;
-    max-width: 90%;
-  }
-  .heroBadgeCongrats, .heroBadgeQualified {
-    position: static;
-    margin: 10px auto;
-    animation: none;
-    transform: none;
-  }
-  .heroBadgeCongrats { margin-top: 40px; }
-  .heroBadgeQualified { margin-top: 15px; }
-  .blurredGradient1 {
-    width: 400px;
-    height: 400px;
-    left: -100px;
-  }
-  .blurredGradient2 {
-    width: 300px;
-    height: 300px;
-    right: -50px;
-  }
-}
-
-@media (max-width: 480px) {
-  .heroMainHeading {
-    font-size: 36px;
-    line-height: 42px;
-  }
-  .heroDescriptionText {
-    font-size: 16px;
-    line-height: 22px;
-  }
-  .heroCTAButton {
+   .heroSection {
+    position: relative;
     width: 100%;
-    max-width: 250px;
+    min-height: 700px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 120px 20px 80px;
+    overflow: hidden;
   }
-}
+  
+  /* ==========================================================================
+     Background - Styles for the decorative background elements
+     ========================================================================== */
+  
+  .background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+  }
+  
+  .blurredGradient1 {
+    position: absolute;
+    width: 800px; /* Large gradient for visual depth */
+    height: 800px;
+    left: -250px;
+    top: -200px;
+    background: radial-gradient(ellipse at center, rgba(106, 90, 255, 0.15) 0%, rgba(106, 90, 255, 0) 70%); /* Purple gradient */
+    border-radius: 50%;
+    filter: blur(50px);
+  }
+  
+  .blurredGradient2 {
+    position: absolute;
+    width: 600px; /* Slightly smaller gradient */
+    height: 600px;
+    right: -150px;
+    top: 20%;
+    background: radial-gradient(ellipse at center, rgba(0, 176, 200, 0.1) 0%, rgba(0, 176, 200, 0) 70%); /* Teal gradient */
+    border-radius: 50%;
+    filter: blur(60px);
+  }
+  
+  .ellipse1,
+  .ellipse2,
+  .ellipse3,
+  .ellipse4,
+  .ellipse5,
+  .ellipse6,
+  .ellipse7,
+  .ellipse8 {
+    position: absolute;
+    border-radius: 50%;
+    opacity: 0.5;
+  }
+  
+  .ellipse1 {
+    width: 8px;
+    height: 8px;
+    left: 15%;
+    top: 25%;
+    background: #4938E9; /* Solid purple */
+  }
+  
+  .ellipse2 {
+    width: 12px;
+    height: 12px;
+    left: 20%;
+    top: 40%;
+    border: 1px solid #4938E9; /* Purple border */
+    opacity: 0.7;
+  }
+  
+  .ellipse3 {
+    width: 6px;
+    height: 6px;
+    left: 12%;
+    top: 65%;
+    background: #00B0C8; /* Solid teal */
+    opacity: 0.6;
+  }
+  
+  .ellipse4 {
+    width: 10px;
+    height: 10px;
+    right: 25%;
+    top: 15%;
+    border: 1px solid #00B0C8; /* Teal border */
+    opacity: 0.7;
+  }
+  
+  .ellipse5 {
+    width: 8px;
+    height: 8px;
+    right: 18%;
+    top: 35%;
+    background: #4938E9; /* Solid purple */
+  }
+  
+  .ellipse6 {
+    width: 15px;
+    height: 15px;
+    right: 22%;
+    top: 60%;
+    border: 1px solid #4938E9; /* Purple border */
+    opacity: 0.6;
+  }
+  
+  .ellipse7 {
+    width: 7px;
+    height: 7px;
+    right: 15%;
+    top: 75%;
+    background: #00B0C8; /* Solid teal */
+    opacity: 0.7;
+  }
+  
+  .ellipse8 {
+    width: 9px;
+    height: 9px;
+    left: 22%;
+    top: 80%;
+    border: 1px solid #00B0C8; /* Teal border */
+    opacity: 0.5;
+  }
+  
+  .rectangle {
+    position: absolute;
+    width: 30px; /* Square size */
+    height: 30px;
+    left: 75%;
+    top: 45%;
+    border: 1px solid rgba(106, 90, 255, 0.3); /* Light purple border */
+    transform: rotate(45deg); /* Diamond shape */
+  }
+  
+  .line {
+    position: absolute;
+    width: 150px; /* Length of the line */
+    height: 1px;
+    left: 10%;
+    top: 50%;
+    background: linear-gradient(90deg, rgba(106, 90, 255, 0) 0%, rgba(106, 90, 255, 0.5) 50%, rgba(106, 90, 255, 0) 100%); /* Gradient line */
+  }
+  
+  /* ==========================================================================
+     Hero Content - Text and Button
+     ========================================================================== */
+  
+  .heroMainHeading {
+    max-width: 833px;
+    margin-bottom: 45px;
+    font-family: "AktivGrotesk-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 70px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    background: linear-gradient(180deg, #030513 0%, #C8C0FF 142.5%); /* Gradient text */
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .heroDescriptionText {
+    max-width: 580px;
+    margin-bottom: 54px;
+    font-family: "AktivGrotesk-Regular", sans-serif;
+    font-weight: 400;
+    font-size: 21px;
+    line-height: 28px;
+    text-align: center;
+    letter-spacing: -0.03em;
+    color: #8A859E;
+    position: relative;
+    z-index: 1;
+  }
+  
+  .heroCTAButton {
+    width: 199px; /* Fixed button width */
+    margin-bottom: 60px;
+    position: relative;
+    z-index: 1;
+  }
+  
+  /* ==========================================================================
+     Headshots and Badges
+     ========================================================================== */
+  
+  .headshotBadgeLeft {
+    position: absolute;
+    left: 15%;
+    top: 55%;
+    width: 104.22px;
+    height: 104.22px;
+  }
+  
+  .headshotBadgeRight {
+    position: absolute;
+    right: 15%;
+    top: 65%;
+    width: 132.6px;
+    height: 132.6px;
+    box-shadow: 15.6923px 15.6923px 78.4615px rgba(0, 52, 156, 0.25); /* Soft shadow */
+  }
+  
+  .headshot {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transform: scaleX(-1); /* Horizontal flip */
+    object-fit: cover;
+  }
+  
+  .heroBadgeCongrats,
+  .heroBadgeQualified {
+    position: absolute;
+    bottom: -30px; /* Position the badge below the headshot */
+    left: 50%;
+    transform: translateX(-50%); /* Center the badge horizontally */
+    display: flex;
+    align-items: center;
+    padding: 7.84615px; /* Consistent padding */
+    gap: 3.14px; /* Spacing between icon and text */
+    border-radius: 78.4615px; /* Pill shape */
+    white-space: nowrap;
+    animation: float 6s ease-in-out infinite; /* Floating animation */
+  }
+  
+  /* Float animation */
+  @keyframes float {
+    0% {
+      transform: translate(-50%, 0px);
+    }
+    50% {
+      transform: translate(-50%, -10px);
+    }
+    100% {
+      transform: translate(-50%, 0px);
+    }
+  }
+  
+  .heroBadgeCongrats {
+    width: 157.82px; /* Badge width */
+    background: rgba(234, 224, 255, 0.52); /* Light purple background */
+    animation-delay: 0.5s;
+  }
+  
+  .heroBadgeQualified {
+    width: 196.82px; /* Slightly wider badge */
+    background: rgba(224, 255, 252, 0.52); /* Light teal background */
+    animation-delay: 1s;
+  }
+  
+  .badgeIconWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .badgeStarIcon {
+    width: 10.98px; /* Fixed size for star icon */
+    height: 10.98px;
+    padding: 2px;
+    border-radius: 50%;
+  }
+  
+  .badgeStarIcon.congrats {
+    border: 0.915385px solid #591FD3; /* Purple border for congrats */
+  }
+  
+  .badgeStarIcon.qualified {
+    border: 0.915385px solid #00521D; /* Teal border for qualified */
+  }
+  
+  .badgeText {
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 10.9846px;
+    line-height: 13px;
+    letter-spacing: -0.03em;
+    white-space: nowrap;
+  }
+  
+  .heroBadgeCongrats .badgeText {
+    color: #591FD3; /* Purple text */
+  }
+  
+  .heroBadgeQualified .badgeText {
+    color: #00521D; /* Teal text */
+  }
+  
+  /* ==========================================================================
+     Responsive - Media Queries
+     ========================================================================== */
+  
+  @media (max-width: 1280px) {
+    .headshotBadgeLeft { left: 10%; }
+    .headshotBadgeRight { right: 10%; }
+  }
+  
+  @media (max-width: 1024px) {
+    .heroMainHeading {
+      font-size: 54px;
+      line-height: 60px;
+      max-width: 700px;
+    }
+    .heroBadgeCongrats,
+    .heroBadgeQualified {
+      transform: scale(0.9) translateX(-50%);
+    }
+  }
+  
+  @media (max-width: 900px) {
+    .heroSection {
+      padding-top: 100px;
+    }
+    .heroMainHeading {
+      font-size: 48px;
+      line-height: 54px;
+      max-width: 600px;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .heroSection {
+      padding-top: 80px;
+      padding-bottom: 120px;
+    }
+    .heroMainHeading {
+      font-size: 42px;
+      line-height: 48px;
+      max-width: 90%;
+    }
+    .heroDescriptionText {
+      font-size: 18px;
+      line-height: 24px;
+      max-width: 90%;
+    }
+    .headshotBadgeLeft, .headshotBadgeRight {
+      position: static;
+      margin: 10px auto;
+    }
+    .heroBadgeCongrats,
+    .heroBadgeQualified {
+      position: static;
+      margin: 10px auto;
+      animation: none;
+      transform: none;
+    }
+    .heroBadgeCongrats {
+      margin-top: 40px;
+    }
+    .heroBadgeQualified {
+      margin-top: 15px;
+    }
+    .blurredGradient1 {
+      width: 400px;
+      height: 400px;
+      left: -100px;
+    }
+    .blurredGradient2 {
+      width: 300px;
+      height: 300px;
+      right: -50px;
+    }
+  }
+  
+  @media (max-width: 480px) {
+    .heroMainHeading {
+      font-size: 36px;
+      line-height: 42px;
+    }
+    .heroDescriptionText {
+      font-size: 16px;
+      line-height: 22px;
+    }
+    .heroCTAButton {
+      width: 100%;
+      max-width: 250px;
+    }
+  }
+  

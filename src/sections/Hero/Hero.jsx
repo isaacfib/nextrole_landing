@@ -34,27 +34,46 @@ const Hero = () => {
         Get Started - For free
       </Button>
 
-      <div className={`${styles.heroBadge} ${styles.heroBadgeCongrats}`}>
-        <div className={styles.badgeIconWrapper}>
-          <img
-            src="/assets/images/star-icon.svg"  
-            alt=""
-            className={`${styles.badgeStarIcon} ${styles.congrats}`}
-          />
+      {/* Headshot with Congrats Badge */}
+      <div className={styles.headshotBadgeLeft}>
+        <img
+          src="/assets/images/male.png"
+          alt="Headshot of smiling man"
+          className={styles.headshot}
+          loading="lazy"
+        />
+        <div className={styles.heroBadgeCongrats}>
+          <div className={styles.badgeIconWrapper}>
+            <img
+              src="/assets/images/star-icon.svg"
+              alt=""
+              className={`${styles.badgeStarIcon} ${styles.congrats}`}
+            />
+          </div>
+          <span className={styles.badgeText}>Congrats! You're hired! 🎉</span>
         </div>
-        <span className={styles.badgeText}>Congrats! You&apos;re hired! 🎉</span>
       </div>
 
-      <div className={`${styles.heroBadge} ${styles.heroBadgeQualified}`}>
-        <div className={styles.badgeIconWrapper}>
-          <img
-            src="/assets/images/star-icon.svg"  
-            alt=""
-            className={`${styles.badgeStarIcon} ${styles.qualified}`}
-          />
+      {/* Headshot with Qualified Badge */}
+      <div className={styles.headshotBadgeRight}>
+        <img
+          src="/assets/images/female.png"
+          alt="Headshot of smiling woman"
+          className={styles.headshot}
+          loading="lazy"
+        />
+        <div className={styles.heroBadgeQualified}>
+          <div className={styles.badgeIconWrapper}>
+            <img
+              src="/assets/images/star-icon.svg"
+              alt=""
+              className={`${styles.badgeStarIcon} ${styles.qualified}`}
+            />
+          </div>
+          <span className={styles.badgeText}>You are 86% qualified for this role</span>
         </div>
-        <span className={styles.badgeText}>You are 86% qualified for this role</span>
-      </div>
+        </div> {/* This is the closing div tag you are missing */}
+      </div> {/* This is the closing div tag for headshotBadgeRight */}
     </section>
   );
 };
