@@ -3,13 +3,14 @@
   "version": "1.0.0",
   "description": "Landing page for Nextrole - Unlock Your Career Potential with AI-Powered Tools",
   "scripts": {
-  "dev": "vite --host",
-  "build": "vite build",
-  "preview": "vite preview --port 5173",
-  "lint": "eslint src --ext .js,.jsx",
-  "format": "prettier --write \"src/**/*.{js,jsx,css}\""
-},
+    "dev": "vite --host",
+    "build": "vite build",
+    "preview": "vite preview --port 5173",
+    "lint": "eslint src --ext .js,.jsx",
+    "format": "prettier --write \"src/**/*.{js,jsx,css}\""
+  },
   "dependencies": {
+    "history": "^5.3.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.4.0"
